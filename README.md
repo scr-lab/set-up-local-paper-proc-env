@@ -21,7 +21,7 @@
 ```powershell
 # 1. リポジトリをクローン
 git clone https://github.com/scr-lab/set-up-local-paper-proc-env
-cd lab-notebook
+cd set-up-local-paper-proc-env
 
 # 2. セットアップを実行（管理者権限が必要です）
 # 右クリック → "PowerShell を管理者として実行" で実行するか:
