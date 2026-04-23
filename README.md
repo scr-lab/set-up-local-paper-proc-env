@@ -1,11 +1,11 @@
-# 🔬 lab-notebook — ローカル論文処理環境セットアップ
+# lab-notebook — ローカル論文処理環境セットアップ
 
 > **Open Notebook + Ollama** で構築する、プライバシー安全な NotebookLM 代替環境。  
 > **`git clone` → `setup.ps1` の 1 コマンドで構築完了します。**
 
 ---
 
-## 📦 必要なもの（事前準備不要、スクリプトが自動インストール）
+## 必要なもの（事前準備不要、スクリプトが自動インストール）
 
 | 依存 | 備考 |
 |------|------|
@@ -16,7 +16,7 @@
 
 ---
 
-## 🚀 クイックスタート
+## クイックスタート
 
 ```powershell
 # 1. リポジトリをクローン
@@ -56,7 +56,7 @@ Start-Process powershell -Verb RunAs -ArgumentList "-File .\setup.ps1"
 
 ---
 
-## 🖥️ Open Notebook の初期設定（セットアップ後）
+## Open Notebook の初期設定（セットアップ後）
 
 `http://localhost:8502` をブラウザで開き、以下を設定します。
 
@@ -73,7 +73,7 @@ Start-Process powershell -Verb RunAs -ArgumentList "-File .\setup.ps1"
 
 ---
 
-## 📝 プロンプトテンプレート
+## プロンプトテンプレート
 
 `prompts/templates.toml` に論文処理用のテンプレートが収録されています。
 
@@ -90,7 +90,7 @@ Start-Process powershell -Verb RunAs -ArgumentList "-File .\setup.ps1"
 
 ---
 
-## 📡 arXiv 自動取り込み
+## arXiv 自動取り込み
 
 ```powershell
 cd $HOME\open-notebook
@@ -121,7 +121,7 @@ SEARCH_QUERIES = [
 
 ---
 
-## 🔄 日常的な操作
+## 日常的な操作
 
 ```powershell
 # 起動（Docker Desktop を起動後に実行）
@@ -139,7 +139,7 @@ cd $HOME\open-notebook && docker compose pull && docker compose up -d
 
 ---
 
-## 🛠️ トラブルシューティング
+## トラブルシューティング
 
 ### Open Notebook の画面が真っ白
 
@@ -170,7 +170,7 @@ ollama pull llama3.1:8b-instruct-q4_K_M
 
 ---
 
-## 📁 リポジトリ構成
+## リポジトリ構成
 
 ```
 lab-notebook/
@@ -186,13 +186,13 @@ lab-notebook/
 
 ---
 
-## 📄 ライセンス
+## ライセンス
 
 MIT License
 
 ---
 
-## 🙏 謝辞
+## 謝辞
 
 - [Open Notebook](https://github.com/lfnovo/open-notebook)
 - [Ollama](https://github.com/ollama/ollama)
