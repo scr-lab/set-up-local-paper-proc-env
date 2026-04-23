@@ -20,7 +20,7 @@
 
 ```powershell
 # 1. リポジトリをクローン
-git clone https://github.com/<your-org>/lab-notebook.git
+git clone https://github.com/scr-lab/set-up-local-paper-proc-env
 cd lab-notebook
 
 # 2. セットアップを実行（管理者権限が必要です）
