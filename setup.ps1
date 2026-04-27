@@ -295,6 +295,7 @@ services:
     command: start --user root --pass root memory
     ports:
       - "8000:8000"
+      - "5055:5055"
 
   open_notebook:
     image: lfnovo/open_notebook:v1-latest
@@ -309,6 +310,7 @@ services:
       - SURREAL_NAMESPACE=open_notebook
       - SURREAL_DATABASE=open_notebook
       - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - API_URL=http://localhost:5055
     volumes:
       - ./notebook_data:/app/data
     depends_on:
